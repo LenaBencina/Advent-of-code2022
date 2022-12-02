@@ -1,0 +1,4 @@
+.idea/
+venvAOC22
+inputs/*
+!inputs/.gitkeep
