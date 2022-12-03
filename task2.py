@@ -19,7 +19,7 @@ def get_total_score(part2=False):
             score_round = (me_i + 1) + score_partial  # 1=rock, 2=paper, 3=scissor; index + 1
             score_total = score_total + score_round
 
-        print(f'Part {2 if part2 else 1}: score_total')
+        print(f'Part {2 if part2 else 1}: {score_total}')
 
 
 get_total_score()
