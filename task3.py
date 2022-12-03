@@ -12,7 +12,7 @@ def get_sum_priorities(part2=False):
             else:
                 # for part1 take t_i-th rucksack and slice it in half
                 r = input_rucksacks[r_i]
-                groups = set(r[slice(0, len(r) // 2)]), set(r[slice(len(r) // 2, len(r))])
+                groups = set(r[:len(r) // 2]), set(r[len(r) // 2:])
 
             common = list(set.intersection(*groups))[0]  # get common element with set intersection
             priority = ord(common) - 38 if common.isupper() else ord(common) - 96  # get value from unicode code point
